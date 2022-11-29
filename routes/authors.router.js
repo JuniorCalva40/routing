@@ -10,11 +10,7 @@ route.get("/", (req, res) => {
   res.json(authors);
 });
 
-// ! First goes specific routes, then dynamic routes.
-
-route.get("/filter", (req, res) => {
-  res.send("I am a filter route");
-});
+// Get post Put and Delete
 
 route.get("/:id", (req, res) => {
   const { id } = req.params;
